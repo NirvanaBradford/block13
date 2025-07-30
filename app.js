@@ -7,6 +7,8 @@ const flavours = [
   "coffee",
 ];
 
+console.log(flavours);
+
 const userInputString = prompt(
   "Please enter some integers separated by commas.",
   "vanilla, vanilla, vamilla, strawberry, coffee, coffee"
