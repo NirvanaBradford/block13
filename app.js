@@ -1,4 +1,4 @@
-// froyoShop array for flavours
+// froyoShop array for flavors
 const order = [
   "vanilla",
   "vanilla",
@@ -9,25 +9,31 @@ const order = [
 ];
 
 // creating an object to fill with order count
-const flavourCount = {};
+const flavorCount = {};
 
 for (let i = 0; i < order.length; i++) {
-  const flavours = order[i];
+  const flavors = order[i];
   // does the key exist in my object
-  console.log(flavourCount);
+  console.log(flavorCount);
 
-  if (flavours in flavourCount) {
+  if (flavors in flavorCount) {
     // add one to the count
-    flavourCount[flavours] += 1;
+    flavorCount[flavors] += 1;
     // otherwise if it doesn't
   } else {
-    flavourCount[flavours] = 1;
+    // place it of object assign value to 1
+    flavorCount[flavors] = 1;
   }
 }
 
-console.log(flavourCount);
+// split string into array of string
+function splitString(commaSeparatedFlavors) {
+  const string = commaSeparatedFlavors.split(",");
+}
+
+console.log(flavorCount);
 
 const userInputString = prompt(
-  "Please enter some integers separated by commas.",
+  "Please enter some Froyo Flavors separated by commas.",
   "vanilla, vanilla, vamilla, strawberry, coffee, coffee"
 );
