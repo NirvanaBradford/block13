@@ -1,18 +1,22 @@
+// prompt user input
+const userInputString = prompt(
+  "Please enter some Froyo Flavors separated by commas.",
+  "vanilla, vanilla, vanilla, strawberry, coffee, coffee"
+);
+
 // froyoShop array for flavors
-const order = [
-  "vanilla",
-  "vanilla",
-  "vanilla",
-  "strawberry",
-  "coffee",
-  "coffee",
-];
+const order = userInputString;
+
+// turning order into an array
+const froyoShop = order.split(",");
+console.log(froyoShop);
 
 // creating an object to fill with order count
 const flavorCount = {};
 
-for (let i = 0; i < order.length; i++) {
-  const flavors = order[i];
+// creating a froyoShop loop throught flavors
+for (let i = 0; i < froyoShop.length; i++) {
+  const flavors = froyoShop[i];
   // does the key exist in my object
   console.log(flavorCount);
 
@@ -26,14 +30,4 @@ for (let i = 0; i < order.length; i++) {
   }
 }
 
-// split string into array of string
-function splitString(commaSeparatedFlavors) {
-  const string = commaSeparatedFlavors.split(",");
-}
-
 console.log(flavorCount);
-
-const userInputString = prompt(
-  "Please enter some Froyo Flavors separated by commas.",
-  "vanilla, vanilla, vamilla, strawberry, coffee, coffee"
-);
