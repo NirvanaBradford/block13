@@ -8,7 +8,7 @@ const userInputString = prompt(
 const order = userInputString;
 
 // turning order into an array
-const froyoShop = order.split(",");
+const froyoShop = order.split(", ");
 console.log(froyoShop);
 
 // creating an object to fill with order count
@@ -30,4 +30,4 @@ for (let i = 0; i < froyoShop.length; i++) {
   }
 }
 
-console.log(flavorCount);
+console.log("order", flavorCount);
